@@ -37,6 +37,6 @@ class _Preview extends StatelessWidget {
     if (preview == null) {
       return Container(width: size, height: size, alignment: Alignment.center, decoration: BoxDecoration(borderRadius: BorderRadius.circular(8), color: Theme.of(context).colorScheme.surfaceVariant), child: const Icon(Icons.folder_open));
     }
-    return ClipRRect(borderRadius: BorderRadius.circular(8), child: Image.network(preview!.imageUrl, width: size, height: size, fit: BoxFit.cover));
+    return ClipRRect(borderRadius: BorderRadius.circular(8), child: Image.asset(preview!.imageUrl, width: size, height: size, fit: BoxFit.cover));
   }
 }

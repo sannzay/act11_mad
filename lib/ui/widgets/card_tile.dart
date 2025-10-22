@@ -23,7 +23,7 @@ class CardTile extends StatelessWidget {
       child: Card(
         clipBehavior: Clip.antiAlias,
         child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-          Expanded(child: Image.network(card.imageUrl, fit: BoxFit.cover)),
+          Expanded(child: Image.asset(card.imageUrl, fit: BoxFit.cover)),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
